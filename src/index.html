@@ -2,13 +2,24 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Asul|Mystery+Quest" rel="stylesheet">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
+  </div>
+    <h1>Bienvenida a tu Cifrado Virtual</h1>
+    <h2>"El único lugar que te ayudara a mantener tus conversaciones seguras"</h2><br><br> 
+    <div>
+    <textarea id="mensaje" name="comentario" rows="5" cols="50">Escribe tu comentario: </textarea><br><br> 
+     <button id= "cifrar" type="button">Encriptar</button>
+     <button id="descifrar" type="button">Desencriptar</button><br>
+     <p>Coloca aqui tu clave: <input id="desplazamiento" type="text" size="8"/></p>
+     <br><br>
+     <textarea id="resuelto" name="comentario" rows="5" cols="50">Texto cifrado: </textarea>
+     <p id="resultado"></p>
     </div>
+    <div id="data_box"></div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
