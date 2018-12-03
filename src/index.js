@@ -15,4 +15,5 @@ window.onload =() => {
         document.getElementById("resuelto").innerHTML= window.cipher.decode(desplazamiento1,menssage1);  //le indico que imprima en el div "resuelto" el mensaje descifrado
         return window.cipher.decode(desplazamiento1,menssage1) //retorna el valor del texto descifrado
 })
+
 }

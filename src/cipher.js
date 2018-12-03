@@ -5,10 +5,10 @@ window.cipher = { //Es el objeto
     offset=parseInt(offset); // Se utiliza el parseInt para convertir el valor a un numero
     let resultado = '';
     for (let i=0; i<texto.length; i++){
-      let letterAscii=texto[i].charCodeAt();
+      let letterAscii=texto[i].charCodeAt(); //me indica el codigo ascii
       if (letterAscii >= 65 && letterAscii <= 90 ) {
         let encryptedLetter=(letterAscii-65+offset)%26+65; 
-        resultado += String.fromCharCode(encryptedLetter); // concatenando el resultado
+        resultado += String.fromCharCode(encryptedLetter); // convertir de ascii  letra y concatenando el resultado
       }else if (letterAscii >= 97 && letterAscii <= 122 ) {
         let encryptedLetter=(letterAscii-97+offset)%26+97; 
         resultado += String.fromCharCode(encryptedLetter); 
