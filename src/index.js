@@ -1,7 +1,7 @@
 //aqui solo va el manejo del DOM
 window.onload =() => {
     const btnCifrar = document.getElementById("cifrar");//identificando el boton cifrar con una variable
-    btnCifrar.addEventListener("click", ()=>{ //Asignandole una funcion al boton
+    btnCifrar.addEventListener("click", ()=>{ //Asignandole una funcion flecha al boton
         let menssage1 = document.getElementById("mensaje").value; //evaluando lo que se encuentra dentro de mi caja de usuario
         let desplazamiento1 = document.getElementById("desplazamiento").value;
         document.getElementById("resuelto").innerHTML= window.cipher.encode(desplazamiento1,menssage1); //Indicandole que escriba en el div el resultado del cifrar
