@@ -12,8 +12,8 @@
     <title>Caesar Cipher</title> 
    
 </head>
-<body>     
-    <header>
+<body>   
+    <header class="col-md-12">
         <h1>Bienvenida a tu Cifrado Virtual</h1>
         <h2>"El único lugar que te ayudara a mantener tus conversaciones seguras"</h2><br><br> 
         <!--Crear menu de navegacion-->
@@ -22,25 +22,34 @@
                     <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" class="navbar-brand">¿Quieres saber más?</a>
         </nav>
     </header>
-    <section class="main row">
-            <article class="col-md-12">
-            <div class="container">
-                <div class="container"> <!--El div class container le da un espaciado a lo que este dentro-->
-                <textarea id="mensaje" name="comentario" rows="5" cols="30" placeholder="Texto a cifrar o descifrar: "></textarea>
-                <label for="desplazamiento">Coloca aqui tu clave: </label>
-                <input id="desplazamiento" name="offset" type="text" placeholder="clave" maxlength="2"/>
-                <br><br>
-                
-                <textarea id="resuelto" name="comentario" rows="5" cols="30" placeholder=" Resultado: "></textarea>
-                <button id= "cifrar" type="button">Encriptar</button>
-                <button id="descifrar" type="button">Desencriptar</button>
-                <input type="reset" value="Borrar"></input>
-                <p id="resultado"></p></div>
-            
-                </div>
-            
-        </section> 
-    </article>
+        <section class="main row">
+            <article>
+                <form id="container">
+                    <div class="container"> <!--El div class container le da un espaciado a lo que este dentro-->
+                        <textarea id="mensaje" name="comentario" rows="5" cols="30" placeholder="Texto a cifrar o descifrar: "></textarea>
+                        <label for="desplazamiento">Coloca aqui tu clave: </label>
+                         <input id="desplazamiento" name="offset" type="text" placeholder="clave" maxlength="2"/>
+                         <br><br>
+                        <textarea id="resuelto" name="comentario" rows="5" cols="30" placeholder=" Resultado: "></textarea>
+                        <button id= "cifrar" type="button">Encriptar</button>
+                        <button id="descifrar" type="button">Desencriptar</button>
+                        <input type="reset" value="Borrar"/>
+                        <!--<p id="resultado"></p> verificar-->
+                    </div>
+                </form>
+            </article>
+                <div class="container-fluid" id="lista">
+
+                    <h3>Instrucciones de uso:</h3>
+                    <p>
+                        <ol>
+                            <li> Coloca tu mensaje sin caracteres especiales.</li>
+                            <li>Ahora ingresa tu clave (máximo 02 digitos)</li>
+                            <li>Presione Cifrar / Descifrar y obten tu mensaje cifrado</li>
+                            <li>Si te equivocaste presiona "Borrar" e inicia de nuevo.</li>
+                        </ol>
+                    </p></div>
+    </section> 
     <aside class="col-md-12">
             <p><br><br><br><br><br><br><br><br></p> 
             
@@ -51,8 +60,8 @@
         </div>   
     <footer>
         <div class="container">
-        <h3>Laboratoria - Common Core 2018-2 - Proyecto 1</h3>
-        <h4>Participante: Olga Pérez</h4>
+        <h4>Laboratoria - Common Core 2018-2 - Proyecto 1</h4>
+        <h5>Participante: Olga Pérez</h5>
         </div>
     </footer>
     
