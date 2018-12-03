@@ -1,29 +1,63 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" type="image/x-icon" href="src/favicon.ico"/>
-    <link href="https://fonts.googleapis.com/css?family=Asul|Mystery+Quest" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="imagen/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Asul|Mystery+Quest" rel="stylesheet"/>
     <title>Caesar Cipher</title> 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-  </div>
-    <h1>Bienvenida a tu Cifrado Virtual</h1>
-    <h2>"El único lugar que te ayudara a mantener tus conversaciones seguras"</h2><br><br> 
-    <img src="https://cinderellatmidnight.files.wordpress.com/2012/06/dsc07928.jpg" height="200" title="Logo de prueba"/>
-    <br><br><br>
-    <div>
-    <textarea id="mensaje" name="comentario" rows="5" cols="50">Escribe tu comentario: </textarea><br><br> 
-     <button id= "cifrar" type="button">Encriptar</button>
-     <button id="descifrar" type="button">Desencriptar</button><br>
-     <p>Coloca aqui tu clave: <input id="desplazamiento" type="text" size="8"/></p>
-     <br><br>
-     <textarea id="resuelto" name="comentario" rows="5" cols="50">Texto cifrado: </textarea>
-     <p id="resultado"></p>
-    </div>
-    <div id="data_box"></div>
+   
+</head>
+<body>     
+    <header>
+        <h1>Bienvenida a tu Cifrado Virtual</h1>
+        <h2>"El único lugar que te ayudara a mantener tus conversaciones seguras"</h2><br><br> 
+        <!--Crear menu de navegacion-->
+        <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+                <div class="container">
+                    <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" class="navbar-brand">¿Quieres saber más?</a>
+        </nav>
+    </header>
+    <section class="main row">
+            <article class="col-md-12">
+            <div class="container">
+                <div class="container"> <!--El div class container le da un espaciado a lo que este dentro-->
+                <textarea id="mensaje" name="comentario" rows="5" cols="30" placeholder="Texto a cifrar o descifrar: "></textarea>
+                <label for="desplazamiento">Coloca aqui tu clave: </label>
+                <input id="desplazamiento" name="offset" type="text" placeholder="clave" maxlength="2"/>
+                <br><br>
+                <button id= "cifrar" type="button">Encriptar</button>
+                <button id="descifrar" type="button">Desencriptar</button><br>
+                <textarea id="resuelto" name="comentario" rows="5" cols="30" placeholder=" Resultado: "></textarea>
+                <p id="resultado"></p></div>
+                </div>
+            
+        </section> 
+    </article>
+    <aside class="col-md-12">
+            <p><br><br><br><br><br><br><br><br></p> 
+            <input id="Resetear" type="reset" value="Borrar">
+    </aside>
+        <div class="row">
+            <div class="color1 col-md-12">
+            </div>
+        </div>   
+    <footer>
+        <div class="container">
+        <h3>Laboratoria - Common Core 2018-2 - Proyecto 1</h3>
+        <h4>Participante: Olga Pérez</h4>
+        </div>
+    </footer>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
-  </body>
+    
+    
+</body>
 </html>
