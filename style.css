@@ -1,31 +1,24 @@
-/*se utiliza otro css para colocar algunos estilos propios que no estan en el bootstrap*/
-
-h1 { 
-    color:#f38181;
-    background-color: #eaffd0;
-    text-align:center;
-    font-size:60px;
-    font-style: italic;
-    font-family: 'Asul', sans-serif;
-    font-family: 'Mystery Quest', cursive;
-    margin-block-start: 0%;
-    padding: 5% 5% 0% 0%;
+h1{
+  font-family: 'Miltonian', cursive;
 }
-h2 { 
-  color:#f38181;
-  background-color: ;
+body {
+  background-image: url("https://st3.depositphotos.com/1752173/18660/v/1600/depositphotos_186609570-stock-illustration-floral-pattern-vector-seamless-background.jpg");
+  background-color: rgb(151, 151, 160);
+  background-blend-mode: screen;
   text-align:center;
-  font-size:20px 0 0 0;
-  font-style: italic;
-  padding: 0% 5% 0% 0%;
+  background-attachment: fixed;
 }
-  resetear{
-    padding: 0% 0% 40% 0%;
-  }
-  #reset{
-    padding: 0% 25% 0% 0%;
-  }
-  #lista{
-    background-color:#eaffd0;
-    padding: 5% 0% 0% 10%;
+footer {
+    background: #f38181;
+    text-align:center;
+}
+textarea {
+  background-color: white;
+}
+label{
+  color: black
+}
+#desplazamiento {
+  text-align:center;
+  width: 10%;
   }
