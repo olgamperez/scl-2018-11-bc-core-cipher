@@ -22,3 +22,8 @@ label{
   text-align:center;
   width: 10%;
   }
+  #desplazamiento {
+  border-style: groove;
+  border-width: thin;
+  border-color: f38181;
+}
