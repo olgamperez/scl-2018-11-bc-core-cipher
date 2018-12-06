@@ -26,5 +26,9 @@
 - Actualmente las redes sociales forman parte de la vida de casi el 100% de las personas en edad de adolescente por lo cual se propone mejorar la interacción de nuestras usuarias al colocar algunos links para que a través de estos se pueda copiar el mensaje cifrado a cada una de las redes sociales y estas puedan también enviar mensajes cifrados a sus amigos.
 - Todos sabemos que la idea principal de un diario es realizarlo de forma manuscrita, sin embargo, puede haber algunas usuarias que quisieran llevarlo a través de un blog de notas para lo cual se podría diseñar la manera de enviar el texto al e-mail o descargarlo de forma local. 
 
+### Planificación del proyecto
+
+- La herramienta utilizada para la planificación del proyecto se realizo a tráves de "Trello" puedes observarlo dando clikc en el link: https://trello.com/b/3D5zZXUo/proyecto-1-m%C3%A9todo-cesar
+
 
 
