@@ -1,5 +1,9 @@
 h1{
   font-family: 'Miltonian', cursive;
+  color: #80024d;
+}
+h6 {
+  color: #333333;
 }
 body {
   background-image: url("https://st3.depositphotos.com/1752173/18660/v/1600/depositphotos_186609570-stock-illustration-floral-pattern-vector-seamless-background.jpg");
@@ -7,6 +11,7 @@ body {
   background-blend-mode: screen;
   text-align:center;
   background-attachment: fixed;
+  color: #333333;
 }
 footer {
     background: #f38181;
