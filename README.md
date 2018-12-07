@@ -8,7 +8,7 @@
 
 - Tu Diario Virtual esta diseñada de la siguiente forma:
 
-![Presentación de la Web](Vista.png)
+![Presentación de la Web](capturaPantalla.png)
 
 - Como se dijo anteriormente los pasos a seguir para la optima utilización de la pagina es tan sencilla como se muestra:
 
