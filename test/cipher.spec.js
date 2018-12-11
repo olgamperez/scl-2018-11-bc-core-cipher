@@ -16,9 +16,13 @@ describe('cipher', () => {
     it('debería retornar "pqrstuvwxyzabcdefghijklmno" para "abcdefghijklmnopqrstuvwxyz" con offest 15',() => { 
     assert.equal(cipher.encode(15,"abcdefghijklmnopqrstuvwxyz"), "pqrstuvwxyzabcdefghijklmno"); //assert.equal(actual, expected)
       });
-    it('debería retornar "ñÑ.,:#%&/()=?!" para "ñÑ.,:#%&/()=?!" con offest 13',() => { 
-    assert.equal(cipher.encode(13,"ñÑ.,:#%&/()=?!"), "ñÑ.,:#%&/()=?!"); //assert.equal(actual, expected)
-      });      
+    it('debería retornar ".,:#%&/()=?!" para ".,:#%&/()=?!" con offest 13',() => { 
+    assert.equal(cipher.encode(13,".,:#%&/()=?!"), ".,:#%&/()=?!"); //assert.equal(actual, expected)
+      });  
+    it('debería retornar "âÂ" para "ñÑ" con offest 12',() => { 
+    assert.equal(cipher.encode(12,"ñÑ"), "âÂ");
+          });          
+  
   describe('cipher.decode', () => {
     it('debería ser una función', () => {
       assert.equal(typeof cipher.decode, 'function');
@@ -32,9 +36,12 @@ describe('cipher', () => {
     it('debería retornar "abcdefghijklmnopqrstuvwxyz" para "pqrstuvwxyzabcdefghijklmno" con offest 15',() => { 
     assert.equal(cipher.decode(15,"pqrstuvwxyzabcdefghijklmno"), "abcdefghijklmnopqrstuvwxyz"); //assert.equal(actual, expected)
       });  
-    it('debería retornar "ñÑ.,:#%&/()=?!" para "ñÑ.,:#%&/()=?!" con offest 35',() => { 
-    assert.equal(cipher.decode(35,"ñÑ.,:#%&/()=?!"), "ñÑ.,:#%&/()=?!"); //assert.equal(actual, expected)
+    it('debería retornar ".,:#%&/()=?!" para ".,:#%&/()=?!" con offest 35',() => { 
+    assert.equal(cipher.decode(35,".,:#%&/()=?!"), ".,:#%&/()=?!"); //assert.equal(actual, expected)
     });     
+    it('debería retornar "ñÑ" para "âÂ" con offest 5',() => { 
+    assert.equal(cipher.decode(5,"âÂ"), "ñÑ");
+            }); 
   });
 });
 })

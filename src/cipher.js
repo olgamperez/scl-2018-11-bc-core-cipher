@@ -17,12 +17,12 @@ window.cipher = { //Es el objeto
         let encryptedLetter=(letterAscii-48+offset)%10+48; 
         resultado += String.fromCharCode(encryptedLetter);
       }
-      else if (letterAscii == 209) {
+      else if (letterAscii === 209) {
         let encryptedLetter= 194
         
           resultado += String.fromCharCode(encryptedLetter);
       } 
-      else if (letterAscii == 241) {
+      else if (letterAscii === 241) {
         let encryptedLetter= 226
         
           resultado += String.fromCharCode(encryptedLetter);
@@ -58,19 +58,13 @@ window.cipher = { //Es el objeto
         (encryptedLetter +=10)}
       resultado += String.fromCharCode(encryptedLetter);
     }
-    else if (letterAscii === 126) {
-      let encryptedLetter= 209
-      resultado += String.fromCharCode(encryptedLetter);
-    } 
     else if (letterAscii == 194) {
       let encryptedLetter= 209
-      
         resultado += String.fromCharCode(encryptedLetter);
     } 
-    else if (letterAscii == 226) {
+    else if (letterAscii === 226) {
       let encryptedLetter= 241
-      
-        resultado += String.fromCharCode(encryptedLetter);
+      resultado += String.fromCharCode(encryptedLetter);
     }
     else {
       resultado += texto[i]
