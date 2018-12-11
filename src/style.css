@@ -21,13 +21,11 @@ textarea {
   background-color: white;
 }
 label{
-  color: black
+  color: #333333
 }
 #desplazamiento {
   text-align:center;
   width: 10%;
-  }
-#desplazamiento {
   border-style: groove;
   border-width: thin;
   border-color: f38181;
